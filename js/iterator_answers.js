@@ -34,6 +34,35 @@ let reducedArray = arr.reduce((a,b)=>{
 	return a + b // Adds the first element to the next until there is no more to add and returns that value
 })
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Chaining
+// Using iterators to find the total sheepCount of sheep shorn by sheep shearers at the 1623 Sheep Shearing Feast:
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const sheepShearers = [
+    {
+        name: "Tim",
+        age: 20,
+        sheepCount: 18
+    },
+    {
+        name: "C3PO",
+        age: 200,
+        sheepCount: 320
+    },
+    {
+        name: "Cousin It",
+        age: Infinity,
+        sheepCount: 2900
+    }
+];
+
+let output = sheepShearers.map((a)=>{
+	return a.sheepCount // returns new array with only the sheepCount properties
+}).reduce((a,b)=>{
+	return a + b // adds the values of those prior returned sheepCount properties and returns it
+})
+
 
 
 
