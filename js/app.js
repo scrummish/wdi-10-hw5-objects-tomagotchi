@@ -68,3 +68,24 @@ console.log(greeter.hello("sergio"));
 console.log(greeter.goodBye("sergio"));
 console.log(greeter.whoAreYou("sergio"))
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Collecting Strings
+// Make an object called stringCollector, which has:
+// a collection property - an array to hold strings
+// a collect method which takes a string as a parameter
+// the string collector prefers the strings to be totally reversed in their collection, however, so make sure to reverse it before adding it to the collection
+// add an admireCollection method which prints out each string in the collection to the console, one line at a time
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let stringCollector = {
+	collection: ["test","dsf"],
+	collect: function(str){
+		return str.split("").reverse().join("") // Chaining 3 methods to reverse the string, 1st 1 splits each character into an array 2nd 1 reverses the array & 3rd 1 creates a string out of the characters in the array
+	},
+	admireCollection: function(){
+		for (let index of this.collection){
+			console.log(index) // prints contents of array
+		}
+	}
+}
+
