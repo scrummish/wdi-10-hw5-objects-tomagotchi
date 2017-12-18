@@ -133,3 +133,25 @@ let leonardo = {
 		}
 	}
 }
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Calculator
+// Create an object called calculator
+// Create a property called output
+// Create a method inside your object that will multiply two numbers and change the output value to this current value. This method should also log the value of output.
+// Create a function that will divide two numbers. It should also change the output value to this current value. This method should also log the value of output.
+// Practice using your calculator with some pairs (10, 2), (-2, 8), (2, 2).
+// If there's additional time, add methods for addition and subtraction
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let calculator = {
+	output: undefined,
+	multiply: function(a,b){
+		this.output = a * b; // gives output a new value of a times b
+		console.log(this.output)
+	},
+	divide: function(a,b){
+		this.output = a / b; // gives output a new value of a divided by b
+		console.log(this.output)
+	}
+}
